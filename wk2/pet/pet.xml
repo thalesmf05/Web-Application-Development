@@ -1,0 +1,38 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="pets.css" ?>
+
+    <Pets>
+        <Pet>
+            <PetID>7</PetID>
+            <Name>Pauk</Name>
+            <Category>Cat</Category>
+            <Breed>Siamese</Breed>
+            <DataAdopted>01/25/2011</DataAdopted>
+            <Gender>Male</Gender>
+            <Registered>CFA</Registered>
+            <Color>Black</Color>
+            <ListPrice>€279.54</ListPrice>
+        </Pet>
+        <Pet>
+            <PetID>7</PetID>
+            <Name>Pauk</Name>
+            <Category>Cat</Category>
+            <Breed>Siamese</Breed>
+            <DataAdopted>01/25/2011</DataAdopted>
+            <Gender>Male</Gender>
+            <Registered>CFA</Registered>
+            <Color>Black</Color>
+            <ListPrice>€279.54</ListPrice>
+        </Pet>
+        <Pet>
+            <PetID>7</PetID>
+            <Name>Pauk</Name>
+            <Category>Cat</Category>
+            <Breed>Siamese</Breed>
+            <DataAdopted>01/25/2011</DataAdopted>
+            <Gender>Male</Gender>
+            <Registered>CFA</Registered>
+            <Color>Black</Color>
+            <ListPrice>€279.54</ListPrice>
+        </Pet>
+    </Pets> 

@@ -1,0 +1,20 @@
+.container {
+    margin: 25px 100px 5px 100px ;
+}
+.header{
+    background-color: greenyellow;
+    margin-bottom: 1%;
+}
+
+#img_mouse {
+    float: right;
+}
+.links_div {
+    border: solid green 2px;
+    border-radius: 2px;
+    padding: 5px 5px 5px 10px 
+}
+.bottom_reserved {
+    background-color: aqua;
+    padding-top: 5px;
+}

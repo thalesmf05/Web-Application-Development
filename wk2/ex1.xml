@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<library xmlns="http://ns.doc.book">
+    <book>
+        <BookID></BookID>
+        <Author></Author>
+        <Title></Title>
+        <Genre></Genre>
+        <Price></Price> 
+        <Publisher>
+            <Name></Name> 
+            <Year></Year> 
+        </Publisher> 
+    </book>
+</library> 

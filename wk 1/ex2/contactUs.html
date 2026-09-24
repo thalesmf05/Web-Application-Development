@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <div class="container">
+      <div class="row header">
+        <div class="col-9">
+            <h1>Planet Earth Pet Shop</h1>
+            <p>Find your companion</p>
+        </div>
+
+        <div class="col-3 d-flex justify-content-end">
+            <img src="images/logo.jpg" alt="Logo">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-2">
+          <div class="links_div">
+            <a href="index.html">Home</a><br>
+            <a href="">Testimonials</a><br>
+            <a href="">About us</a><br>
+            <a href="contactUs.html">Contact us</a>
+          </div>       
+        </div>
+
+        <div class="col-10 text-center">
+            <h2>Send us a message</h2>
+
+            <form action="">
+              <label for="name">Your name: </label><br>
+              <input type="text" name="form1" id="name"><br>
+
+              <label for="animal">Your preferred animal</label><br>
+              <select name="animal" id="animal">
+                <option value="cat">Cat</option>
+                <option value="dog">dog</option>
+                <option value="mouse">mouse</option>
+              </select><br>
+              
+
+              <label for="preference">Preffered sex of your pet: </label><br>
+
+              <label for="male">male</label>
+              <input type="radio" name="male" id="male">
+
+              <label for="female">female</label>
+              <input type="radio" name="female" id="female">
+
+              <label for="nopref">No preference</label>
+              <input type="radio" name="nopref" id="nopref"><br>
+
+               
+              <label for="colour">Colour: </label><br>
+
+              <label for="white">white</label>
+              <input type="checkbox" name="white" id="white">
+              
+              <label for="grey">grey</label>
+              <input type="checkbox" name="grey" id="grey">
+              
+              <label for="yellow">yellow</label>
+              <input type="checkbox" name="yellow" id="yellow">
+              
+              <label for="black">black</label>
+              <input type="checkbox" name="black" id="black"><br>
+
+              <label for="others">Other comments:</label><br>
+              <textarea name="others" id="others" rows="3">
+
+              </textarea><br>
+
+              <input type="button" value="Submit">
+            </form>
+        </div>
+      </div>
+
+      <div class="row text-center mt-5 bottom_reserved">
+        <div class="col-12 ">
+          <p>All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

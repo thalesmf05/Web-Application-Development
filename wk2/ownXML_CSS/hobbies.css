@@ -1,0 +1,69 @@
+Favourite_Hobbies {
+    background-color: rgb(255, 230, 199);
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+Hobbies{
+    display: block;
+}
+
+Title {
+    display: block;
+    font-size: 30px;
+    width: fit-content;
+    background-color: rgb(72, 42, 42);
+    border: solid black 1px;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    padding: 10px;
+    color: aliceblue;
+}
+
+Place{
+    display: inline-block;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 45%;
+    height: 30%;
+}
+
+Location{
+    display: block;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: fit-content;
+    padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 3%;
+}
+
+Hobbie {
+    display: block;
+    background-color:rgb(236, 223, 207);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 3%;
+
+
+}
+
+Name, Reason, Time-doing {
+    display: block;
+}
+
+Name {
+    font-size: 15px;
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+
+
+
+

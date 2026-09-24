@@ -1,0 +1,12 @@
+h1 {font-family: Verdana;
+    font-size: 20pt;
+    color: blue;}
+
+.semi-title {font-family: Arial;
+            font-size: 14pt;
+            color: blue;}
+table, td, th {border: solid black 2px}
+table {border-collapse: collapse;}
+
+th, td {padding: 10px;}
+

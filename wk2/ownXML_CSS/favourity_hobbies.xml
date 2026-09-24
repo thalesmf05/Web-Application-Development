@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="hobbies.css" type="text/css"?>
+
+<Favourite_Hobbies>
+    <Title>Favourite Hobbiess</Title>
+    
+    <Hobbies>
+            <Place>
+                <Location>Outside</Location>
+                <Hobbie>
+                    <Name>Cycling</Name>
+                    <Reason>I like speed and is good to relax my mind</Reason>
+                    <Time_doing>2 years</Time_doing>
+                </Hobbie>
+                <Hobbie>
+                    <Name>Swimming</Name>
+                    <Reason>It play a big part of my life since I used to compete during high school</Reason>
+                    <Time_doing>20 Years - 3 Years as a competidor</Time_doing>
+                </Hobbie>
+            </Place>
+            
+            <Place>
+                <Location>Inside</Location>
+                <Hobbie>
+                    <Name>Play card games</Name>
+                    <Reason>I find them very fun</Reason>
+                    <Time_doing>8 years</Time_doing>
+                </Hobbie>
+                <Hobbie>
+                    <Name>Play videogames</Name>
+                    <Reason>I like playing with my friedns to relax</Reason>
+                    <Time_doing>8 years</Time_doing>
+                </Hobbie>
+            </Place>
+    </Hobbies>
+
+</Favourite_Hobbies>
