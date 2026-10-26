@@ -1,12 +1,18 @@
-async function loadData(url) {
-    const table = document.getElementById("resultTable");
+const searchForm = document.getElementById("search-form");
+searchForm.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+    searchProducts("products.xml"); // Call the searchProducts function with the XML file URL
+});
+
+async function searchProducts(url) {
+    const table = document.getElementById("result-table");
 
     // Reset the result section before displaying the next result.
     table.replaceChildren();
 
     try{
         table.replaceChildren();
-        const inputValue = document.getElementById("codeInput").value;
+        const inputValue = document.getElementById("search-input").value;
 
         if(!validateInput(inputValue)){ //Check if input is valid, if not trown an error and break process
            return table.innerHTML = "<tr><td>Invalid code, please try again</td></tr>"; //Stops loadData()

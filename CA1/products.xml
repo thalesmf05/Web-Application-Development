@@ -8,6 +8,7 @@
         <description>Brown formal leather shoes for everyday wear.</description>
         <quantity>12</quantity>
         <unitPrice>59.99</unitPrice>
+        <imagePath>img/clasic-leather-shoes.jpeg</imagePath>
     </product>
     <product>
         <category>Shoes</category>
@@ -16,6 +17,7 @@
         <description>Lightweight trainers designed for running and exercise.</description>
         <quantity>20</quantity>
         <unitPrice>44.50</unitPrice>
+        <imagePath>img/running-shoes.jpeg</imagePath>
     </product>
     <product>
         <category>Shoes</category>
@@ -24,6 +26,7 @@
         <description>Comfortable canvas shoes suitable for casual outfits.</description>
         <quantity>15</quantity>
         <unitPrice>29.99</unitPrice>
+        <imagePath>img/casual-canvas-shoes.jpeg</imagePath>
     </product>
     <product>
         <category>Shoes</category>
@@ -32,6 +35,7 @@
         <description>Durable boots with a warm lining for cold weather.</description>
         <quantity>8</quantity>
         <unitPrice>74.95</unitPrice>
+        <imagePath>img/winter-boots.jpeg</imagePath>
     </product>
 
     <!-- Clothes -->
@@ -42,6 +46,7 @@
         <description>Regular-fit cotton T-shirt in black.</description>
         <quantity>30</quantity>
         <unitPrice>14.99</unitPrice>
+        <imagePath>img/basic-cotton-tshirt.jpeg</imagePath>
     </product>
     <product>
         <category>Clothes</category>
@@ -50,6 +55,7 @@
         <description>Blue denim jeans with a slim fit.</description>
         <quantity>18</quantity>
         <unitPrice>39.95</unitPrice>
+        <imagePath>img/slim-fit-jeans.jpeg</imagePath>
     </product>
     <product>
         <category>Clothes</category>
@@ -58,6 +64,7 @@
         <description>Soft fleece hoodie for everyday comfort.</description>
         <quantity>14</quantity>
         <unitPrice>34.50</unitPrice>
+        <imagePath>img/hooded-sweatshirt.jpeg</imagePath>
     </product>
     <product>
         <category>Clothes</category>
@@ -66,6 +73,7 @@
         <description>Long-sleeved white shirt suitable for formal occasions.</description>
         <quantity>10</quantity>
         <unitPrice>32.00</unitPrice>
+        <imagePath>img/formal-shirt.jpeg</imagePath>
     </product>
 
     <!-- Accessories -->
@@ -76,6 +84,7 @@
         <description>Classic black belt with a metal buckle.</description>
         <quantity>16</quantity>
         <unitPrice>19.99</unitPrice>
+        <imagePath>img/belt.jpeg</imagePath>
     </product>
     <product>
         <category>Accessories</category>
@@ -84,6 +93,7 @@
         <description>Adjustable cotton cap for casual use.</description>
         <quantity>22</quantity>
         <unitPrice>12.50</unitPrice>
+        <imagePath>img/baseball-cap.jpeg</imagePath>
     </product>
     <product>
         <category>Accessories</category>
@@ -92,6 +102,7 @@
         <description>Practical backpack with a main compartment and front pocket.</description>
         <quantity>9</quantity>
         <unitPrice>42.95</unitPrice>
+        <imagePath>img/backpack.jpeg</imagePath>
     </product>
     <product>
         <category>Accessories</category>
@@ -100,5 +111,6 @@
         <description>Minimal wristwatch with a black strap.</description>
         <quantity>7</quantity>
         <unitPrice>54.99</unitPrice>
+        <imagePath>img/watch.jpeg</imagePath>
     </product>
 </products>
