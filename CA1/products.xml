@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+    <!-- Shoes -->
+    <product>
+        <category>Shoes</category>
+        <code>101-01</code>
+        <name>Classic Leather Shoes</name>
+        <description>Brown formal leather shoes for everyday wear.</description>
+        <quantity>12</quantity>
+        <unitPrice>59.99</unitPrice>
+    </product>
+    <product>
+        <category>Shoes</category>
+        <code>101-02</code>
+        <name>Running Trainers</name>
+        <description>Lightweight trainers designed for running and exercise.</description>
+        <quantity>20</quantity>
+        <unitPrice>44.50</unitPrice>
+    </product>
+    <product>
+        <category>Shoes</category>
+        <code>101-03</code>
+        <name>Casual Canvas Shoes</name>
+        <description>Comfortable canvas shoes suitable for casual outfits.</description>
+        <quantity>15</quantity>
+        <unitPrice>29.99</unitPrice>
+    </product>
+    <product>
+        <category>Shoes</category>
+        <code>101-04</code>
+        <name>Winter Boots</name>
+        <description>Durable boots with a warm lining for cold weather.</description>
+        <quantity>8</quantity>
+        <unitPrice>74.95</unitPrice>
+    </product>
+
+    <!-- Clothes -->
+    <product>
+        <category>Clothes</category>
+        <code>201-01</code>
+        <name>Basic Cotton T-Shirt</name>
+        <description>Regular-fit cotton T-shirt in black.</description>
+        <quantity>30</quantity>
+        <unitPrice>14.99</unitPrice>
+    </product>
+    <product>
+        <category>Clothes</category>
+        <code>201-02</code>
+        <name>Slim Fit Jeans</name>
+        <description>Blue denim jeans with a slim fit.</description>
+        <quantity>18</quantity>
+        <unitPrice>39.95</unitPrice>
+    </product>
+    <product>
+        <category>Clothes</category>
+        <code>201-03</code>
+        <name>Hooded Sweatshirt</name>
+        <description>Soft fleece hoodie for everyday comfort.</description>
+        <quantity>14</quantity>
+        <unitPrice>34.50</unitPrice>
+    </product>
+    <product>
+        <category>Clothes</category>
+        <code>201-04</code>
+        <name>Formal Shirt</name>
+        <description>Long-sleeved white shirt suitable for formal occasions.</description>
+        <quantity>10</quantity>
+        <unitPrice>32.00</unitPrice>
+    </product>
+
+    <!-- Accessories -->
+    <product>
+        <category>Accessories</category>
+        <code>301-01</code>
+        <name>Leather Belt</name>
+        <description>Classic black belt with a metal buckle.</description>
+        <quantity>16</quantity>
+        <unitPrice>19.99</unitPrice>
+    </product>
+    <product>
+        <category>Accessories</category>
+        <code>301-02</code>
+        <name>Baseball Cap</name>
+        <description>Adjustable cotton cap for casual use.</description>
+        <quantity>22</quantity>
+        <unitPrice>12.50</unitPrice>
+    </product>
+    <product>
+        <category>Accessories</category>
+        <code>301-03</code>
+        <name>Everyday Backpack</name>
+        <description>Practical backpack with a main compartment and front pocket.</description>
+        <quantity>9</quantity>
+        <unitPrice>42.95</unitPrice>
+    </product>
+    <product>
+        <category>Accessories</category>
+        <code>301-04</code>
+        <name>Classic Wristwatch</name>
+        <description>Minimal wristwatch with a black strap.</description>
+        <quantity>7</quantity>
+        <unitPrice>54.99</unitPrice>
+    </product>
+</products>
