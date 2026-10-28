@@ -1,0 +1,11 @@
+.product-list.has-products { /* Style for the product list when it has products */
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: fit-content;
+}
+.img{ /* Style for the image */
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover; /* Maintain the aspect ratio */
+}

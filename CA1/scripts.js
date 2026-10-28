@@ -1,33 +1,36 @@
 const searchForm = document.getElementById("search-form");
+
 searchForm.addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent the default form submission behavior
     searchProducts("products.xml"); // Call the searchProducts function with the XML file URL
 });
 
 async function searchProducts(url) {
-    const table = document.getElementById("result-table");
-
-    // Reset the result section before displaying the next result.
-    table.replaceChildren();
+    const productList = document.querySelector('.product-list');
+    productList.classList.remove('has-products'); // Add the class to the product list container
+    productList.innerHTML = ""; // Remove the existing product list if it exists
 
     try{
-        table.replaceChildren();
-        const inputValue = document.getElementById("search-input").value;
+        const inputValue = document.getElementById("search-input").value; //Get the value from the input field
 
         if(!validateInput(inputValue)){ //Check if input is valid, if not trown an error and break process
-           return table.innerHTML = "<tr><td>Invalid code, please try again</td></tr>"; //Stops loadData()
+           return productList.innerHTML =
+               "<p>Invalid code format, please try again.</p>" +
+               "<p>Valid codes are: 101-01, 101-02, 101-03, 101-04, " +
+               "201-01, 201-02, 201-03, 201-04, 301-01, 301-02, " +
+               "301-03, 301-04</p>"; //Stops loadData()
         }
 
-        const response = await fetch(url);
+        const response = await fetch(url); 
 
         if(!response.ok){ //check the response from fecth the xml
             throw new Error("HTTP" + response.status);
         }
 
         const text = await response.text();
-        const xmlData = new DOMParser().parseFromString(text, "text/xml");
+        const xmlData = new DOMParser().parseFromString(text, "text/xml"); //parse the xml data into a DOM object
 
-        const products = xmlData.getElementsByTagName("product")
+        const products = xmlData.getElementsByTagName("product") //get all the products from the xml file
 
         let matchingProduct = null; 
         
@@ -41,43 +44,68 @@ async function searchProducts(url) {
         }
 
         if(!matchingProduct){ //return an error in case of no matching code
-            table.innerHTML = "<tr><td>Invalid code, please try again</td></tr>";
+            productList.innerHTML =
+                "<p>Code doesn't exist, please try again.</p>" +
+                "<p>Valid codes are: 101-01, 101-02, 101-03, 101-04, " +
+                "201-01, 201-02, 201-03, 201-04, 301-01, 301-02, " +
+                "301-03, 301-04</p>";
             return;
         }
 
-        const headers = ["Category", "Code", "Name", "Description", "Quantity", "Unity Price"];
-        addRow(table, headers, "th"); //create the product header
+        createProduct(matchingProduct); //create the product list
 
-        //fecth data from the machingProduct object
-        const category = matchingProduct.getElementsByTagName("category")[0].textContent;
-        const code = matchingProduct.getElementsByTagName("code")[0].textContent;
-        const name = matchingProduct.getElementsByTagName("name")[0].textContent;
-        const description = matchingProduct.getElementsByTagName("description")[0].textContent;
-        const quantity = matchingProduct.getElementsByTagName("quantity")[0].textContent;
-        const unitPrice = matchingProduct.getElementsByTagName("unitPrice")[0].textContent;
-
-        addRow(table, [category, code, name, description, quantity, unitPrice], "td"); //create the product row
-
-    }catch(error){
-        table.innerHTML = "<tr><td>Could not load items: " + error.message + "</td></tr>";
+    }catch(error){ //catch any error that might occur during the fetch or parsing process
+        productList.innerHTML = "<p>Could not load items: " + error.message + "</p>";
     }
+ 
+    function createProduct(matchingProduct){
+        productList.classList.add('has-products'); // Add the class to the product list container for styling purposes
 
-    function addRow(table, values, cellType){
-        const row = document.createElement("tr")
+        //image
+        const img = document.createElement('img');  
+        img.src = matchingProduct.getElementsByTagName("imagePath")[0].textContent;
+        img.alt = matchingProduct.getElementsByTagName("name")[0].textContent;
+        img.classList.add('img-fluid', 'rounded-4'); // Add a class for styling usinhg bootstrap
+        productList.appendChild(img);
 
-        for(const value of values){
-            const cell = document.createElement(cellType);
+        //information div 
+        const productInfo = document.createElement('div');
+        productInfo.classList.add('product-info');
 
-            cell.textContent = value;
+        //name
+        const h2 = document.createElement('h2');
+        h2.textContent = matchingProduct.getElementsByTagName("name")[0].textContent;
+        productInfo.appendChild(h2);
 
-            row.appendChild(cell);
-        }
+        //category and code 
+        const pCategoryAndCOde = document.createElement('p');
+        pCategoryAndCOde.classList.add('category-code');
+        pCategoryAndCOde.textContent = matchingProduct.getElementsByTagName("category")[0].textContent + " | " + matchingProduct.getElementsByTagName("code")[0].textContent;
+        productInfo.appendChild(pCategoryAndCOde);
 
-        table.appendChild(row);
+        //price
+        const pPrice = document.createElement('p');
+        pPrice.classList.add('price');
+        pPrice.textContent = "€" + matchingProduct.getElementsByTagName("unitPrice")[0].textContent;
+        productInfo.appendChild(pPrice);
+
+        //description
+        const pDescription = document.createElement('p');
+        pDescription.classList.add('description');
+        pDescription.textContent = matchingProduct.getElementsByTagName("description")[0].textContent;
+        productInfo.appendChild(pDescription);
+
+        //quantity
+        const pQuantity = document.createElement('p');
+        pQuantity.classList.add('quantity');
+        pQuantity.textContent = "Stock: " + matchingProduct.getElementsByTagName("quantity")[0].textContent;
+        productInfo.appendChild(pQuantity);
+
+        productList.appendChild(productInfo); // Append the product info div to the product list
     }
     
-    function validateInput(value){
-            const pattern = /^[0-9]{3}-[0-9]{2}$/; 
-            return pattern.test(value);
+    function validateInput(value){ // Validate the input value using a regular expression
+            const pattern = /^[0-9]{3}-[0-9]{2}$/; // Regular expression pattern for the format "XXX-XX" where X is a digit
+            return pattern.test(value); // Test the input value against the pattern and return true if it matches, false otherwise
     }
 }
