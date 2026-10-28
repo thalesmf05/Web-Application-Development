@@ -1,11 +1,24 @@
-.product-list.has-products { /* Style for the product list when it has products */
+#product-list.has-products { /* Style for the product list when it has products */
     border: 1px solid black;
     padding: 10px;
     border-radius: 5px;
     max-width: fit-content;
 }
-.img{ /* Style for the image */
+#product-image { /* Style for the product images */
     max-width: 200px;
-    height: 200px;
+    max-height: 200px;
     object-fit: cover; /* Maintain the aspect ratio */
+    border-radius: 2px; 
+}
+
+.search-form {
+    width: 100%;
+    max-width: 500px;
+}
+
+#weather-results.has-result{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
 }

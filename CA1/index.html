@@ -20,8 +20,8 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" aria-current="page" href="json.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Clothes Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="weather.html">Weather API</a></li>
                     </ul>
                     
                 </div>
@@ -34,7 +34,7 @@
 
             <!-- search section -->
             <p>Search for a product:</p>
-            <form id="search-form" class="hstack gap-2 w-100" role="search"">
+            <form id="chothes-form" class="hstack gap-2 w-100" role="search"">
                 <input id="search-input" class="form-control" type="search" placeholder="123-45" aria-label="Search"/>
                 <button class="btn-solid btn-icon theme-secondary w-auto flex-shrink-0" type="submit" aria-label="Search">
                     <i class="bi bi-search" aria-hidden="true"></i>
@@ -42,7 +42,7 @@
             </form>
 
             <!-- result section -->
-            <div class="product-list d-flex gap-4 p-3 rounded-4 align-items-start mt-5 justify-content-center">
+            <div id="product-list" class="product-list d-flex gap-4 p-3 rounded-4 align-items-start mt-5 justify-content-center">
                 <!-- Results will be inserted here -->
             </div>
 
